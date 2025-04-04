@@ -5,11 +5,14 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
     app: {
         head: {
-            title: 'Creative Solutions Through Code | Frontend Developer',
+            titleTemplate: '%s %separator %siteName',
+            templateParams: {
+                separator: '|',
+                siteName: 'Baldor'
+            },
             meta: [
-                { name: 'description', content: 'Frontend developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.' },
-                { name: 'robots', content: 'index, follow' },
-                { property: 'og:title', content: 'Creative Solutions Through Code | Frontend Developer' },
+                { name: 'description', content: 'Fullstack developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.' },
+                { property: 'og:title', content: 'Creative Solutions Through Code | Fullstack Developer' },
                 { property: 'og:type', content: 'website' },
                 { property: 'og:url', content: 'https://baldor.dev' },
                 { property: 'og:image', content: '/og-image.webp' },
@@ -22,6 +25,10 @@ export default defineNuxtConfig({
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
             ]
         }
+    },
+    site: {
+        url: process.env.NUXT_SITE_URL,
+        name: 'My Awesome Website'
     },
     build: {
         analyze: true
