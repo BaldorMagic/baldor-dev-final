@@ -32,8 +32,13 @@
                     <div>
                         <label class="block text-gray-600 mb-2" for="message">What are you looking to achieve?</label>
                         <textarea id="message" rows="4" name="message"
-                            class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent" />
+                            class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent mb-2" />
                     </div>
+                    <label class="text-gray-800" >
+                        <input type="checkbox" name="consent" required>
+                        I consent to having this website store my submitted information so they can respond to my
+                        inquiry. Read our <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
+                    </label>
                     <button type="submit" value="Submit"
                         class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors font-medium">
                         Schedule Free Consultation
