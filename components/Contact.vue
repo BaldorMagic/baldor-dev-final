@@ -34,18 +34,25 @@
                         <textarea id="message" rows="4" name="message"
                             class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent mb-2" />
                     </div>
-                    <label class="text-gray-800" >
-                        <input type="checkbox" name="consent" required>
-                        I consent to having this website store my submitted information so they can respond to my
-                        inquiry. Read our <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
+                    <label class="block mt-4">
+                        <input type="checkbox" required>
+                        I consent to the processing of my data in accordance with our
+                        <button type="button" class="text-blue-600 underline ml-1" @click="showPolicy = true">
+                            Privacy Policy
+                        </button>.
                     </label>
                     <button type="submit" value="Submit"
                         class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors font-medium">
                         Schedule Free Consultation
                     </button>
                 </form>
+                <PrivacyPolicyModal :show="showPolicy" :close="() => (showPolicy = false)" />
             </div>
         </div>
     </section>
 </template>
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const showPolicy = ref(false);
+</script>
