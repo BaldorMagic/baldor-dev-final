@@ -5,7 +5,7 @@
         <div class="max-w-6xl mx-auto text-center">
             <div class="mb-6 flex justify-center">
                 <div class="bg-gradient-to-br from-orange-200 to-amber-100 p-3 rounded-2xl  animate-bounce flex items-center justify-center">
-                    <Icon :name=icon class="!p-0 w-8 h-8 text-orange-600"/>
+                    <Icon :name=icon class="!p-0 size-8"/>
                 </div>
             </div>
             <h2
@@ -44,7 +44,7 @@
     </section>
 </template>
 <script setup lang="ts">
-const icon: string = 'hugeicons:monster'
+const icon: string = 'my-icon:axolotl'
 </script>
 <style scoped>
 @keyframes animateText {

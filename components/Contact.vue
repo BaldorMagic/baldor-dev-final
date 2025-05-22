@@ -20,7 +20,7 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-gray-600 mb-2" for="email">Email</label>
-                            <input id="email" type="email" name="email"
+                            <input id="email" type="email" name="email" required
                                 class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent" />
                         </div>
                         <div>
@@ -31,7 +31,7 @@
                     </div>
                     <div>
                         <label class="block text-gray-600 mb-2" for="message">What are you looking to achieve?</label>
-                        <textarea id="message" rows="4" name="message"
+                        <textarea id="message" rows="4" name="message" required
                             class="w-full bg-gray-100 text-gray-600 px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-300 focus:border-transparent mb-2" />
                     </div>
                     <label class="block mt-4">

@@ -16,7 +16,7 @@ export default defineNuxtConfig({
                 { property: 'og:type', content: 'website' },
                 { property: 'og:url', content: 'https://baldor.dev' },
                 { property: 'og:image', content: '/og-image.webp' },
-                { property: 'og:image:alt', content: 'An alien cat walking on a planet' },
+                { property: 'og:image:alt', content: 'A pink axolotl' },
             ],
             htmlAttrs: {
                 lang: 'en'
@@ -26,11 +26,15 @@ export default defineNuxtConfig({
             ]
         }
     },
-    site: {
-        url: process.env.NUXT_SITE_URL,
-        name: 'My Awesome Website'
-    },
     build: {
         analyze: true
+    },
+    icon: {
+        customCollections: [
+            {
+                prefix: 'my-icon',
+                dir: './assets/my-icons'
+            }
+        ]
     }
 })
