@@ -30,6 +30,8 @@ export default defineNuxtConfig({
         analyze: true
     },
     icon: {
+        mode: 'css',
+        cssLayer: 'base',
         customCollections: [
             {
                 prefix: 'my-icon',
