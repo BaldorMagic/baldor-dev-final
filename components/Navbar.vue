@@ -2,8 +2,8 @@
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center">
         <!-- Title -->
-        <h1 class="text-xl font-bold text-gray-700 whitespace-nowrap">
-          Web Solutions for Businesses
+        <h1 class="text-5xl font-bold text-gray-900 whitespace-nowrap">
+          Baldor
         </h1>
         
         <!-- Desktop menu -->

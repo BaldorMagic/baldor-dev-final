@@ -23,7 +23,7 @@
 
           <div class="mt-auto pt-4 border-t border-gray-100">
             <div class="text-sm text-gray-500 mb-1">Starting from</div>
-            <div class="text-3xl font-bold text-orange-600">{{ service.price }}</div>
+            <div class="text-3xl font-bold text-[#ee4b4d]">{{ service.price }}</div>
           </div>
         </div>
       </div>

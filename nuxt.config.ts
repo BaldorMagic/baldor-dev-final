@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     devtools: { enabled: true },
-    modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
     app: {
         head: {
             titleTemplate: '%s %separator %siteName',
@@ -29,14 +29,4 @@ export default defineNuxtConfig({
     build: {
         analyze: true
     },
-    icon: {
-        mode: 'css',
-        cssLayer: 'base',
-        customCollections: [
-            {
-                prefix: 'my-icon',
-                dir: './assets/my-icons'
-            }
-        ]
-    }
 })

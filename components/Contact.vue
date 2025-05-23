@@ -42,7 +42,7 @@
                         </button>.
                     </label>
                     <button type="submit" value="Submit"
-                        class="w-full bg-orange-600 text-white py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors font-medium">
+                        class="w-full bg-[#ee4b4d] text-white text-lg font-semibold py-4 px-8 rounded-lg hover:bg-[#F06163] transition-colors font-medium">
                         Schedule Free Consultation
                     </button>
                 </form>
