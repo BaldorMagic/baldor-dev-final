@@ -1,10 +1,10 @@
 <template>
-  <section id="services" class="py-20 bg-gradient-to-b from-teal-50 to-white">
+  <section id="services" class="py-20 bg-gradient-to-b from-pink-50 to-white">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-center mb-16 text-gray-700">Services & Pricing</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div v-for="(service, index) in services" :key="index"
-          class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          class="bg-white rounded-xl p-8 shadow-sm hover:shadow-[0_10px_0_gray] hover:translate-y-[-10px] transition-all duration-300 flex flex-col">
           <div :class="`mb-4 ${bgColor[index]} w-12 h-12 rounded-xl flex items-center justify-center`">
             <Icon :name=service.icon class="!p-0 w-8 h-8" :class="iconColor[index]" />
           </div>

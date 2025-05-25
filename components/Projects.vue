@@ -1,12 +1,12 @@
 <template>
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-gradient-to-b from-rose-50 to-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 text-gray-700">
                 Real Results for Businesses
             </h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div v-for="(project, index) in projects" :key="index"
-                    class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
+                    class="group bg-white rounded-xl p-6 hover:shadow-[0_10px_0_gray] hover:translate-y-[-10px] transition-all duration-300 border border-gray-100"
                     @mouseenter="activeProject = index" @mouseleave="activeProject = 0">
                     <div
                         :class="`bg-gradient-to-br ${gradientFrom[index]} ${gradientTo[index]} rounded-xl p-4 w-fit flex items-center justify-center`">
@@ -17,7 +17,7 @@
                     <div class="space-y-2 mb-4">
                         <div v-for="(metric, i) in project.metrics" :key="i"
                             class="flex items-center text-sm text-gray-600">
-                            <Icon name="lucide:star" width="24" height="24" />                            {{ metric }}
+                            <Icon name="lucide:star" width="24" height="24" /> {{ metric }}
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-4">

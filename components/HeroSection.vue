@@ -21,7 +21,7 @@
                     Get Free Consultation
                 </NuxtLink>
                 <NuxtLink to="#projects"
-                    class="bg-gray-100 text-gray-600 px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors">
+                    class="bg-gray-100 text-gray-600 text-lg px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors">
                     See Results
                 </NuxtLink>
             </div>
@@ -43,7 +43,6 @@
     </section>
 </template>
 <script setup lang="ts">
-const icon: string = 'my-icon:axolotl'
 </script>
 <style scoped>
 @keyframes animateText {
