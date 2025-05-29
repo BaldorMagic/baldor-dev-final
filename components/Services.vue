@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import type { Service } from '~/types/collections';
+
+const iconColor = ['text-sky-500', 'text-orange-400', 'text-purple-600', 'text-pink-500'];
+const bgColor = ['bg-sky-50', 'bg-orange-50', 'bg-purple-50', 'bg-pink-50'];
+
+const { services } = defineProps<{
+  services: Service[];
+}>();
+
+function getIconName(icon: string): string {
+  return `ic:outline-${icon.toLowerCase().replace(/_/g, '-')}`;
+}
+
+</script>
 <template>
   <section id="services" class="py-20 bg-gradient-to-b from-pink-50 to-white">
     <div class="max-w-6xl mx-auto px-4">
@@ -6,7 +21,7 @@
         <div v-for="(service, index) in services" :key="index"
           class="bg-white rounded-xl p-8 shadow-sm hover:shadow-[0_10px_0_gray] hover:translate-y-[-10px] transition-all duration-300 flex flex-col">
           <div :class="`mb-4 ${bgColor[index]} w-12 h-12 rounded-xl flex items-center justify-center`">
-            <Icon :name=service.icon class="!p-0 w-8 h-8" :class="iconColor[index]" />
+            <Icon :name='getIconName(service.icon)' class="!p-0 w-8 h-8" :class="iconColor[index]" />
           </div>
           <h3 class="text-xl font-bold mb-2 text-gray-700">{{ service.title }}</h3>
           <p class="text-gray-600 mb-4">{{ service.description }}</p>
@@ -30,10 +45,3 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-
-const iconColor = ['text-sky-500', 'text-orange-400', 'text-purple-600', 'text-pink-500'];
-const bgColor = ['bg-sky-50', 'bg-orange-50', 'bg-purple-50', 'bg-pink-50'];
-
-defineProps(['services']);
-</script>

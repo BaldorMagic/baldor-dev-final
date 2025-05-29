@@ -5,19 +5,6 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
     app: {
         head: {
-            titleTemplate: '%s %separator %siteName',
-            templateParams: {
-                separator: '|',
-                siteName: 'Baldor'
-            },
-            meta: [
-                { name: 'description', content: 'Fullstack developer specialized in Vue.js, tailwindcss and Typescript. Building performant, accessible and beautiful web applications.' },
-                { property: 'og:title', content: 'Creative Solutions Through Code | Fullstack Developer' },
-                { property: 'og:type', content: 'website' },
-                { property: 'og:url', content: 'https://baldor.dev' },
-                { property: 'og:image', content: '/og-image.webp' },
-                { property: 'og:image:alt', content: 'A pink axolotl' },
-            ],
             htmlAttrs: {
                 lang: 'en'
             },

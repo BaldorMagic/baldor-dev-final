@@ -12,7 +12,7 @@
                 Grow Your Business Online
             </h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                I help small businesses increase their revenue with professional websites,
+                I help businesses increase their revenue with professional websites,
                 online stores, and local SEO. Get more customers and simplify your operations.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-4">

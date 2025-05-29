@@ -1,9 +1,17 @@
-<script setup>
-const { data } = await useFetch('/api/collections');
+<script setup lang="ts">
+import type { Project, Service } from '~/types/Collections';
 
-const items = data.value.items;
-const projects = items.projects;
-const services = items.services;
+interface CollectionsResponse {
+    collections: string[];
+    items: {
+        projects: Project[];
+        services: Service[];
+    }
+}
+const { data } = await useFetch<CollectionsResponse>('/api/collections');
+
+const projects = data.value?.items.projects || [];
+const services = data.value?.items.services || [];
 </script>
 <template>
     <div>
