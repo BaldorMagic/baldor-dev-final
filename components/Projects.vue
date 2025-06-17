@@ -41,7 +41,7 @@ const iconList = ['shopping cart', 'Globe', 'Search'];
                         <p class="text-gray-600">{{ project.solution }}</p>
                     </div>
                     <div class="space-y-2 mb-4">
-                        <div v-for="(result, i) in project.results" :key="i"
+                        <div v-for="(result, i) in project.result" :key="i"
                             class="flex items-center text-sm text-gray-600">
                             <Icon name="lucide:star" width="24" height="24" /> {{ result }}
                         </div>
