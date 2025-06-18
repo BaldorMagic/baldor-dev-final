@@ -14,7 +14,6 @@ function getIconName(icon: string): string {
     return `ic:outline-${icon.toLowerCase().replace(/_/g, '-')}`;
 }
 
-const iconList = ['shopping cart', 'Globe', 'Search'];
 
 </script>
 <template>
