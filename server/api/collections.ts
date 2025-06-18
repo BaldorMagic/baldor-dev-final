@@ -1,5 +1,6 @@
+import { Project, Service } from '~/types/Collections'
+
 export default defineEventHandler(async (event) => {
-    // const config = useRuntimeConfig();
     const url = process.env.DIRECTUS_URL;
     const token = process.env.DIRECTUS_TOKEN;
 
@@ -9,7 +10,7 @@ export default defineEventHandler(async (event) => {
 
         for (const collection of collections) {
             try {
-                const items = await $fetch(`${url}/items/${collection}`, {
+                const items = await $fetch<{ data: any[] }>(`${url}/items/${collection}`, {
                     headers: { Authorization: `Bearer ${token}`}
                 })
                 itemsData[collection] = items.data

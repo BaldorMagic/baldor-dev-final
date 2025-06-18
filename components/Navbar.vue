@@ -2,19 +2,21 @@
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row justify-between items-start lg:items-center">
         <!-- Title -->
-        <h1 class="text-xl font-bold text-gray-700 whitespace-nowrap">
-          Web Solutions for Businesses
+        <NuxtLink to="https://www.baldor.dev">
+          <h1 class="text-5xl font-bold text-gray-900 whitespace-nowrap">
+          Baldor
         </h1>
+        </NuxtLink>
         
         <!-- Desktop menu -->
-        <div class="hidden lg:flex space-x-8 items-center">
-          <NuxtLink to="#projects" class="text-gray-600 hover:text-orange-400 transition-colors">
+        <div class="hidden text-xl lg:flex space-x-8 items-center">
+          <NuxtLink to="#projects" class="text-gray-600 hover:text-[#ee4b4d] transition-colors">
             Results
           </NuxtLink>
-          <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors">
+          <NuxtLink to="#services" class="text-gray-600 hover:text-[#ee4b4d] transition-colors">
             Services
           </NuxtLink>
-          <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">
+          <NuxtLink to="#contact" class="bg-[#ee4b4d] text-white px-4 py-2 rounded-lg hover:bg-[#F06163] transition-colors">
             Let's Connect
           </NuxtLink>
         </div>
@@ -29,14 +31,14 @@
           leave-to-class="max-h-0 opacity-0"
         >
           <div v-if="isOpen" class="lg:hidden w-full overflow-hidden">
-            <div class="py-4 space-y-4 flex flex-col items-center">
-              <NuxtLink to="#projects" class="text-gray-600 hover:text-orange-400 transition-colors" @click="isOpen = false">
+            <div class="text-lg py-4 space-y-4 flex flex-col items-center">
+              <NuxtLink to="#projects" class="text-gray-600 hover:text-[#ee4b4d] transition-colors" @click="isOpen = false">
                 Results
               </NuxtLink>
-              <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors" @click="isOpen = false">
+              <NuxtLink to="#services" class="text-gray-600 hover:text-[#ee4b4d] transition-colors" @click="isOpen = false">
                 Services
               </NuxtLink>
-              <NuxtLink to="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors" @click="isOpen = false">
+              <NuxtLink to="#contact" class="bg-[#ee4b4d] text-white px-4 py-2 rounded-lg hover:bg-[#F06163] transition-colors" @click="isOpen = false">
                 Let's connect
               </NuxtLink>
             </div>
@@ -46,7 +48,7 @@
     
       <!-- Burger/Close button -->
       <button 
-        class="lg:hidden absolute top-4 right-4 text-gray-600 hover:text-orange-400 transition-colors"
+        class="lg:hidden absolute top-4 right-4 text-gray-600 hover:text-[#ee4b4d] transition-colors"
         @click="isOpen = !isOpen"
         aria-label="Toggle menu"
       >
