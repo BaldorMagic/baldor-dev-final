@@ -1,6 +1,4 @@
-import { Project, Service } from '~/types/Collections'
-
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async () => {
     const url = process.env.DIRECTUS_URL;
     const token = process.env.DIRECTUS_TOKEN;
 
