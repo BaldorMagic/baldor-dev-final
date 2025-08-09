@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@directus/sdk": "^20.0.1",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/i18n": "^10.0.3",
     "dotenv": "^16.4.7",
