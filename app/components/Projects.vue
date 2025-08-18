@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import type { Project } from '~/types/Collections';
+import type { Project } from '../../types/Collections';
 
 const { projects } = defineProps<{
     projects: Project[]

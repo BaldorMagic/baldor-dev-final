@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Service } from '~/types/Collections';
+import type { Service } from '../../types/Collections';
 
 const iconColor = ['text-sky-500', 'text-orange-400', 'text-purple-600', 'text-pink-500'];
 const bgColor = ['bg-sky-50', 'bg-orange-50', 'bg-purple-50', 'bg-pink-50'];
