@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     app: {
         head: {
             htmlAttrs: {
-                lang: 'en'
+                lang: 'en',
+                class: 'scroll-smooth'
             },
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
