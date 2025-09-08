@@ -16,7 +16,7 @@ function getIconName(icon: string): string {
 <template>
   <section id="services" class="py-20 bg-gradient-to-b from-pink-50 to-white">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-16 text-gray-700">Services & Pricing</h2>
+      <h2 class="text-4xl font-bold text-center mb-16 text-gray-700">{{ $t("Services.Title") }}</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <div v-for="(service, index) in services" :key="index"
           class="bg-white rounded-xl p-8 shadow-sm hover:shadow-[0_10px_0_gray] hover:translate-y-[-10px] transition-all duration-300 flex flex-col">
@@ -27,17 +27,17 @@ function getIconName(icon: string): string {
           <p class="text-gray-600 mb-4">{{ service.description }}</p>
 
           <div class="mb-4">
-            <h4 class="text-sm font-semibold text-gray-500 mb-1">Best For</h4>
+            <h4 class="text-sm font-semibold text-gray-500 mb-1">{{ $t("Services.Card.Sections.BestFor") }}</h4>
             <p class="text-gray-600">{{ service.best_for }}</p>
           </div>
 
           <div v-if="service.timeframe" class="mb-4">
-            <h4 class="text-sm font-semibold text-gray-500 mb-1">Timeframe</h4>
+            <h4 class="text-sm font-semibold text-gray-500 mb-1">{{ $t("Services.Card.Sections.Timeframe") }}</h4>
             <p class="text-gray-600">{{ service.timeframe }}</p>
           </div>
 
           <div class="mt-auto pt-4 border-t border-gray-100">
-            <div class="text-sm text-gray-500 mb-1">Starting from</div>
+            <div class="text-sm text-gray-500 mb-1">{{ $t("Services.Card.Sections.StartingFrom") }}</div>
             <div class="text-3xl font-bold text-[#ee4b4d]">{{ service.price }}</div>
           </div>
         </div>

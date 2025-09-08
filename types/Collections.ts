@@ -5,7 +5,7 @@ export interface Project {
     title: string;
     challenge: string;
     solution: string;
-    result: string[];
+    results: string[];
     url: string;
     icon: string;
   }

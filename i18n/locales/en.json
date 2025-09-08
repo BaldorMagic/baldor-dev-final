@@ -1,4 +1,103 @@
 {
-    "welcome": "Welcome"
+  "Navigation": {
+    "Results": "Results",
+    "Services": "Services",
+    "Contact": "Let's Connect"
+  },
+  "Hero": {
+    "Title": "Grow Your Business Online",
+    "Description": "I help businesses increase their revenue with professional websites, online stores, and local SEO. Get more customers and simplify your operations.",
+    "Links": {
+      "Contact": "Get Free Consultation",
+      "Projects": "See Results"
+    },
+    "Results": ["Happy Clients", "Avg. Revenue Increase", "Satisfaction Rate"]
+  },
+  "Projects": {
+    "Title": "Real Results for Businesses",
+    "Card": {
+      "Sections": {
+        "Challenge": "Challenge",
+        "Solution": "Solution"
+      }
+    }
+  },
+  "Services": {
+    "Title": "Services & Pricing",
+    "Card": {
+      "Sections": {
+        "BestFor": "Best For",
+        "Timeframe": "Timeframe",
+        "StartingFrom": "Starting from"
+      }
+    }
+  },
+  "Contact": {
+    "Title": "Get Your Free Consultation",
+    "BusinessLabel": "Business Name",
+    "NameLabel": "Your Name",
+    "EmailLabel": "Email",
+    "PhoneLabel": "Phone",
+    "IntroductionLabel": "What are you looking to achieve?",
+    "PrivacyPolicyLabel": {
+      "Content": "I consent to the processing of my data in accordance with our ",
+      "Link": "Privacy Policy"
+    },
+    "SubmitButton": "Schedule Free Consultation"
+  },
+  "PrivacyPolicyPopup": {
+    "Title": "Privacy Policy",
+    "Updated": {
+      "Text": "Last updated",
+      "Date": "May 20, 2025"
+    },
+    "Description": "This website collects personal data when you submit the contact form. This policy explains what data we collect, why, and how we handle it.",
+    "DataCollected": {
+      "Title": "What We Collect",
+      "List": [
+        "Business Name (if entered)",
+        "Your Name (if entered)",
+        "Email address",
+        "Phone number (if entered)",
+        "Any message you include"
+      ]
+    },
+    "DataReasoning": {
+      "Title": "Why We Collect It",
+      "List": [
+        "To respond to your inquiry",
+        "To communicate with you if needed"
+      ]
+    },
+    "DataHandling": {
+      "Title": "How Your Data Is Handled",
+      "Description": {
+        "FirstPart": "The form is powered by",
+        "SecondPart": "We do not sell or share your data."
+      }
+    },
+    "DataRetention": {
+      "Title": "Data Retention",
+      "Description": "Your data is retained for up to 30 days unless you request deletion sooner."
+    },
+    "Rights": {
+      "Title": "Your Rights (under GDPR)",
+      "List": [
+        "Request access, correction, or deletion",
+        "Withdraw consent at any time"
+      ]
+    },
+    "Contact": {
+      "Title": "Contact",
+      "Description": "For questions or data requests, contact: "
+    }
+  },
+  "Footer": {
+    "Title": "Ready to grow your business?",
+    "Description": "Let's discuss how I can help you reach more customers and increase revenue.",
+    "Contact": {
+      "Email": "Email",
+      "Phone": "Phone"
+    }
   }
-  
+}

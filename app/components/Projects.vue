@@ -20,7 +20,7 @@ function getIconName(icon: string): string {
     <section id="projects" class="py-20 bg-gradient-to-b from-rose-50 to-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 text-gray-700">
-                Real Results for Businesses
+                {{ $t("Projects.Title") }}
             </h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div v-for="(project, index) in projects" :key="index"
@@ -32,23 +32,19 @@ function getIconName(icon: string): string {
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
                     <div class="mb-4">
-                        <h4 class="text-sm font-semibold text-gray-500 mb-1">Challenge:</h4>
+                        <h4 class="text-sm font-semibold text-gray-500 mb-1">{{ $t("Projects.Card.Sections.Challenge") }}:</h4>
                         <p class="text-gray-600">{{ project.challenge }}</p>
                     </div>
                     <div class="mb-4">
-                        <h4 class="text-sm font-semibold text-gray-500 mb-1">Solution:</h4>
+                        <h4 class="text-sm font-semibold text-gray-500 mb-1">{{ $t("Projects.Card.Sections.Solution") }}:</h4>
                         <p class="text-gray-600">{{ project.solution }}</p>
                     </div>
                     <div class="space-y-2 mb-4">
-                        <div v-for="(result, i) in project.result" :key="i"
-                            class="flex items-center text-sm text-gray-600">
-                            <Icon name="lucide:star" width="24" height="24" /> {{ result }}
+                        <div v-for="(result, i) in project.results" :key="i"
+                            class="flex gap-4 items-center text-sm text-gray-600">
+                            <Icon name="lucide:star" width="24" height="24" size="1.7em" /> {{ result }}
                         </div>
                     </div>
-                    <!-- <NuxtLink to="project.demoUrl"
-                        class="text-gray-600 hover:text-orange-400 flex items-center text-sm">
-                        <Icon name="lucide:external-link" width="24" height="24" />
-                    </NuxtLink> -->
                 </div>
             </div>
         </div>

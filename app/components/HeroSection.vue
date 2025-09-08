@@ -9,34 +9,33 @@
             </div>
             <h2
                 class="text-5xl md:text-6xl font-bold mb-6 animated-text bg-gradient-to-r from-[#ee4b4d] to-[#F06163] bg-clip-text text-transparent">
-                Grow Your Business Online
+                {{ $t("Hero.Title") }}
             </h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                I help businesses increase their revenue with professional websites,
-                online stores, and local SEO. Get more customers and simplify your operations.
+                {{ $t("Hero.Description") }}
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
+            <div class="scroll-smooth flex flex-col md:flex-row justify-center gap-4">
                 <NuxtLink to="#contact"
                     class="bg-[#F06163] text-white text-xl font-semibold px-8 py-3 rounded-lg hover:bg-[#ee4b4d] transition-colors">
-                    Get Free Consultation
+                    {{ $t("Hero.Links.Contact") }}
                 </NuxtLink>
                 <NuxtLink to="#projects"
                     class="bg-gray-100 text-gray-600 text-lg px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors">
-                    See Results
+                    {{ $t("Hero.Links.Projects") }}
                 </NuxtLink>
             </div>
             <div class="mt-12 grid grid-cols-3 max-w-2xl mx-auto  gap-8">
                 <div class="text-center">
                     <div class="text-2xl font-bold text-gray-700">50+</div>
-                    <div class="text-gray-500">Happy Clients</div>
+                    <div class="text-gray-500">{{ $t("Hero.Results[0]") }}</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-bold text-gray-700">40%</div>
-                    <div class="text-gray-500">Avg. Revenue Increase</div>
+                    <div class="text-gray-500">{{ $t("Hero.Results[1]") }}</div>
                 </div>
                 <div class="text-center">
                     <div class="text-2xl font-bold text-gray-700">100%</div>
-                    <div class="text-gray-500">Satisfaction Rate</div>
+                    <div class="text-gray-500">{{ $t("Hero.Results[2]") }}</div>
                 </div>
             </div>
         </div>

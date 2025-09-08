@@ -2,61 +2,60 @@
   <div v-if="show" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
     <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-xl overflow-y-auto max-h-[90vh]">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-3xl font-semibold">Privacy Policy</h2>
+        <h2 class="text-3xl font-semibold">{{ $t("PrivacyPolicyPopup.Title") }}</h2>
         <button @click="close" class="text-gray-500 hover:text-black text-5xl">&times;</button>
       </div>
       <div class="space-y-6 text-gray-800 text-base">
-        <p><strong>Last updated:</strong> May 20, 2025</p>
+        <p><strong>{{ $t("PrivacyPolicyPopup.Updated.Text") }}:</strong> {{ $t("PrivacyPolicyPopup.Updated.Date") }}</p>
 
         <div>
-          <p>This website collects personal data when you submit the contact form. This policy explains what data we
-            collect, why, and how we handle it.</p>
+          <p>{{ $t("PrivacyPolicyPopup.Description") }}</p>
         </div>
 
         <div>
-          <h3 class="font-semibold">1. What We Collect</h3>
+          <h3 class="font-semibold">1. {{ $t("PrivacyPolicyPopup.DataCollected.Title") }}</h3>
           <ul class="list-disc list-inside">
-            <li>Business Name (if entered)</li>
-            <li>Your Name (if entered)</li>
-            <li>Email address</li>
-            <li>Phone number (if entered)</li>
-            <li>Any message you include</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataCollected.List[0]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataCollected.List[1]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataCollected.List[2]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataCollected.List[3]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataCollected.List[4]") }}</li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-semibold">2. Why We Collect It</h3>
+          <h3 class="font-semibold">2. {{ $t("PrivacyPolicyPopup.DataReasoning.Title") }}</h3>
           <ul class="list-disc list-inside">
-            <li>To respond to your inquiry</li>
-            <li>To communicate with you if needed</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataReasoning.List[0]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.DataReasoning.List[1]") }}</li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-semibold">3. How Your Data Is Handled</h3>
+          <h3 class="font-semibold">3. {{ $t("PrivacyPolicyPopup.DataHandling.Title") }}</h3>
           <p>
-            The form is powered by
+            {{ $t("PrivacyPolicyPopup.DataHandling.Description.FirstPart") }} 
             <a href="https://formeezy.com" target="_blank" class="text-blue-600 underline">Formeezy</a>.
-            We do not sell or share your data.
+            {{ $t("PrivacyPolicyPopup.DataHandling.Description.SecondPart") }}
           </p>
         </div>
 
         <div>
-          <h3 class="font-semibold">4. Data Retention</h3>
-          <p>Your data is retained for up to 30 days unless you request deletion sooner.</p>
+          <h3 class="font-semibold">4. {{ $t("PrivacyPolicyPopup.DataRetention.Title") }}</h3>
+          <p>{{ $t("PrivacyPolicyPopup.DataRetention.Description") }}</p>
         </div>
 
         <div>
-          <h3 class="font-semibold">5. Your Rights (under GDPR)</h3>
+          <h3 class="font-semibold">5. {{ $t("PrivacyPolicyPopup.Rights.Title") }}</h3>
           <ul class="list-disc list-inside">
-            <li>Request access, correction, or deletion</li>
-            <li>Withdraw consent at any time</li>
+            <li>{{ $t("PrivacyPolicyPopup.Rights.List[0]") }}</li>
+            <li>{{ $t("PrivacyPolicyPopup.Rights.List[1]") }}</li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-semibold">6. Contact</h3>
-          <p>For questions or data requests, contact: <strong>james@baldor.dev</strong></p>
+          <h3 class="font-semibold">6. {{ $t("PrivacyPolicyPopup.Contact.Title") }}</h3>
+          <p>{{ $t("PrivacyPolicyPopup.Contact.Description") }}: <strong>james@baldor.dev</strong></p>
         </div>
       </div>
     </div>

@@ -1,4 +1,103 @@
 {
-    "welcome": "Bienvenu"
+  "Navigation": {
+    "Results": "Résultats",
+    "Services": "Services",
+    "Contact": "Connectons-nous"
+  },
+  "Hero": {
+    "Title": "Développez votre activité en ligne",
+    "Description": "J'aide les entreprises à augmenter leur chiffre d'affaires grâce à des sites web professionnels, des boutiques en ligne et un référencement local. Attirez plus de clients et simplifiez vos opérations.",
+    "Links": {
+      "Contact": "Obtenez une consultation gratuite",
+      "Projects": "Voir les résultats"
+    },
+    "Results": ["Clients Satisfaits", "Augmentation moyenne du chiffre d'affaires", "Taux de satisfaction"]
+  },
+  "Projects": {
+    "Title": "Des résultats concrets pour les entreprises",
+    "Card": {
+      "Sections": {
+        "Challenge": "Défi",
+        "Solution": "Solution"
+      }
+    }
+  },
+  "Services": {
+    "Title": "Services et tarifs",
+    "Card": {
+      "Sections": {
+        "BestFor": "Idéal pour",
+        "Timeframe": "Calendrier",
+        "StartingFrom": "À partir de"
+      }
+    }
+  },
+  "Contact": {
+    "Title": "Obtenez votre consultation gratuite",
+    "BusinessLabel": "Nom commercial",
+    "NameLabel": "Votre Nom",
+    "EmailLabel": "Email",
+    "PhoneLabel": "Téléphone",
+    "IntroductionLabel": "Que cherchez-vous à accomplir?",
+    "PrivacyPolicyLabel": {
+      "Content": "J'accepte le traitement de mes données conformément à notre ",
+      "Link": "Politique de confidentialité"
+    },
+    "SubmitButton": "Prendre rendez-vous pour une consultation gratuite"
+  },
+  "PrivacyPolicyPopup": {
+    "Title": "Politique de confidentialité",
+    "Updated": {
+      "Text": "Dernière mise à jour",
+      "Date": "20 mai 2025"
+    },
+    "Description": "Ce site web collecte des données personnelles lorsque vous remplissez le formulaire de contact. La présente politique explique quelles données nous collectons, pourquoi et comment nous les traitons.",
+    "DataCollected": {
+      "Title": "Ce que nous collectons",
+      "List": [
+        "Nom commercial (si saisi)",
+        "Votre nom (si saisi)",
+        "Adresse électronique",
+        "Numéro de téléphone (si saisi)",
+        "Tout message que vous incluez"
+      ]
+    },
+    "DataReasoning": {
+      "Title": "Pourquoi nous collectons ces données",
+      "List": [
+        "Pour répondre à votre demande",
+        "Pour communiquer avec vous si nécessaire"
+      ]
+    },
+    "DataHandling": {
+      "Title": "Comment vos données sont traitées",
+      "Description": {
+        "FirstPart": "Le formulaire est alimenté par",
+        "SecondPart": "Nous ne vendons ni ne partageons vos données."
+      }
+    },
+    "DataRetention": {
+      "Title": "Conservation des données",
+      "Description": "Vos données sont conservées pendant 30 jours maximum, sauf si vous demandez leur suppression avant cette date."
+    },
+    "Rights": {
+      "Title": "Vos droits (en vertu du RGPD)",
+      "List": [
+        "Demander l'accès, la correction ou la suppression",
+        "Retirer votre consentement à tout moment"
+      ]
+    },
+    "Contact": {
+      "Title": "Contact",
+      "Description": "Pour toute question ou demande de renseignements, veuillez contacter: "
+    }
+  },
+  "Footer": {
+    "Title": "Prêt à développer votre entreprise?",
+    "Description": "Discutons ensemble de la manière dont je peux vous aider à atteindre davantage de clients et à augmenter votre chiffre d'affaires.",
+    "Contact": {
+      "Email": "Email",
+      "Phone": "Téléphone"
+    }
   }
-  
+}

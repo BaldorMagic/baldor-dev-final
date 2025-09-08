@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         locales: [
             { code: 'en', name: 'English', file: 'en.json' },
             { code: 'fr', name: 'Français', file: 'fr.json' }
-        ]
+        ],
     },
     app: {
         head: {
