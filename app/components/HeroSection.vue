@@ -8,7 +8,7 @@
                 </div>
             </div>
             <h2
-                class="text-5xl md:text-6xl font-bold mb-6 animated-text bg-gradient-to-r from-[#ee4b4d] to-[#F06163] bg-clip-text text-transparent">
+                class="pb-2 h-auto text-5xl md:text-6xl font-bold mb-6 animated-text bg-gradient-to-r from-[#ee4b4d] to-[#F06163] bg-clip-text text-transparent">
                 {{ $t("Hero.Title") }}
             </h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
