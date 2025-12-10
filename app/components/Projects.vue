@@ -11,7 +11,7 @@ const gradientFrom = ['from-orange-300', 'from-teal-300', 'from-sky-300', 'from-
 const gradientTo = ['to-amber-200', 'to-emerald-200', 'to-blue-200', 'to-violet-200', 'to-pink-200'];
 
 function getIconName(icon: string): string {
-    return `ic:outline-${icon.toLowerCase().replace(/_/g, '-')}`;
+    return `ic:outline-${icon.toLowerCase().replaceAll(/_/g, '-')}`;
 }
 
 

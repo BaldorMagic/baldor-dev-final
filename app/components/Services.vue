@@ -9,7 +9,7 @@ const { services } = defineProps<{
 }>();
 
 function getIconName(icon: string): string {
-  return `ic:outline-${icon.toLowerCase().replace(/_/g, '-')}`;
+  return `ic:outline-${icon.toLowerCase().replaceAll(/_/g, '-')}`;
 }
 
 </script>
